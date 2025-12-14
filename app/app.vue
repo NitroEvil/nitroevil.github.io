@@ -233,9 +233,3 @@ const skillCategories = ref([
     </footer>
   </div>
 </template>
-
-<style scoped>
-html {
-  scroll-behavior: smooth;
-}
-</style>
