@@ -40,7 +40,7 @@ const journeyPhases = ref([
   },
   {
     icon: "⚡",
-    title: ".NET Mastery",
+    title: ".NET Focus",
     tech: ".NET",
     description:
       "Found my calling with .NET development. The robust framework, powerful tooling, and comprehensive ecosystem made it the perfect fit. Now building enterprise-grade applications with C#, ASP.NET Core, and modern .NET technologies.",
