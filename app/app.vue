@@ -11,35 +11,35 @@ const stats = ref([
 
 const journeyPhases = ref([
   {
-    icon: "🛠️",
+    icon: "i-heroicons-wrench-screwdriver",
     title: "IT Support Foundation",
     tech: "1st/2nd Line",
     description:
       "Started my tech career in IT support, helping users solve technical problems and gaining deep insights into system architecture and troubleshooting. This experience taught me the importance of user-centric solutions.",
   },
   {
-    icon: "💻",
+    icon: "i-heroicons-command-line",
     title: "PowerShell Scripting",
     tech: "PowerShell",
     description:
       "Began automating repetitive tasks with PowerShell console applications, discovering the power of scripting and automation. This was my first step into actual programming and development.",
   },
   {
-    icon: "🖼️",
+    icon: "i-heroicons-computer-desktop",
     title: "Windows Forms Development",
     tech: "PowerShell + WinForms",
     description:
       "Evolved from console apps to building desktop applications with Windows Forms. Created GUI tools that made complex tasks accessible to non-technical users, bridging the gap between IT and end users.",
   },
   {
-    icon: "🌐",
+    icon: "i-heroicons-globe-alt",
     title: "Web Development",
     tech: "Python + FastAPI",
     description:
       "Transitioned to web development using Python and FastAPI, learning about REST APIs, databases, and full-stack architecture. Built my first web applications and discovered the power of modern web technologies.",
   },
   {
-    icon: "⚡",
+    icon: "i-heroicons-bolt",
     title: ".NET Focus",
     tech: ".NET",
     description:
@@ -153,8 +153,8 @@ const skillCategories = ref([
           <UCard v-for="(phase, index) in journeyPhases" :key="index" :ui="{ body: { padding: 'p-8' } }">
             <div class="mb-4 flex items-start justify-between">
               <div class="flex items-center gap-4">
-                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-500/10 text-2xl">
-                  {{ phase.icon }}
+                <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-500/10">
+                  <UIcon :name="phase.icon" class="h-6 w-6 text-emerald-400" />
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold">{{ phase.title }}</h3>
