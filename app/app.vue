@@ -4,7 +4,7 @@ import { ref, computed } from "vue";
 const currentYear = computed(() => new Date().getFullYear());
 
 const stats = ref([
-  { value: "4+", label: "Technologies Mastered" },
+  { value: "4+", label: "Technologies Used" },
   { value: "100%", label: "Self-Taught" },
   { value: ".NET", label: "Primary Stack" },
 ]);
